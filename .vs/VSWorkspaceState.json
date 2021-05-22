@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PaymentAPI",
+    "\\PaymentAPI\\PaymentAPI",
+    "\\PaymentAPI\\PaymentAPI\\Controllers",
+    "\\PaymentAPI\\PaymentAPI\\Properties"
+  ],
+  "SelectedNode": "\\PaymentAPI\\PaymentAPI\\Properties\\launchSettings.json",
+  "PreviewInSolutionExplorer": false
+}

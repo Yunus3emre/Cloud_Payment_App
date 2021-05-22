@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  db:
+    image: 'mcr.microsoft.com/mssql/server:2019-latest'
+    volumes:
+        - db:/var/opt/mssql
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: 'A1b2a3h4r5e6m'
+        MSSQL_PID: "Express"
+    ports:
+        -   "1433:1433"
+    container_name: db
+    networks:
+        - paymentapi_payment
+
+  paymentapi:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: PaymentAPI/Dockerfile
+    ports:
+        - "4019:80"
+    depends_on:
+        - db
+    command:
+        -   "sleep 5;"
+    networks:
+        - paymentapi_payment
+    environment:
+        ServerName: "db"
+        Database: "PaymentDetailDb"
+        UserName: "SA"
+        Password: "A1b2a3h4r5e6m"
+volumes:
+    db:
+networks:
+  paymentapi_payment:
+    external: true
+

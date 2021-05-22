@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yunus\\source\\repos\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {}
+    "C:\\Users\\Onur\\Desktop\\Bulut Vize\\Cloud_Payment_App\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yunus\\source\\repos\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {
+    "C:\\Users\\Onur\\Desktop\\Bulut Vize\\Cloud_Payment_App\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yunus\\source\\repos\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Onur\\Desktop\\Bulut Vize\\Cloud_Payment_App\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
         "projectName": "PaymentAPI",
-        "projectPath": "C:\\Users\\Yunus\\source\\repos\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
-        "packagesPath": "C:\\Users\\Yunus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yunus\\source\\repos\\PaymentAPI\\PaymentAPI\\obj\\",
+        "projectPath": "C:\\Users\\Onur\\Desktop\\Bulut Vize\\Cloud_Payment_App\\PaymentAPI\\PaymentAPI\\PaymentAPI.csproj",
+        "packagesPath": "C:\\Users\\Onur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Onur\\Desktop\\Bulut Vize\\Cloud_Payment_App\\PaymentAPI\\PaymentAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yunus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Onur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +62,10 @@
               "target": "Package",
               "version": "[5.0.3, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -85,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
