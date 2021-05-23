@@ -1,3 +1,7 @@
+networks:
+  paymentapi_default:
+    external: true
+    name: paymentapi_default
 services:
   db:
     container_name: db
@@ -9,6 +13,8 @@ services:
     ports:
     - published: 1433
       target: 1433
+    volumes:
+    - db:/var/opt/mssql:rw
   paymentapi:
     build:
       context: C:\Users\Onur\Desktop\Bulut Vize\Cloud_Payment_App\PaymentAPI
@@ -20,9 +26,15 @@ services:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      Database: PaymentDetailDb
+      Password: A1b2a3h4r5e6m
+      ServerName: db
+      UserName: SA
     image: paymentapi
     ports:
-    - published: 8000
+    - published: 4019
       target: 80
     - target: 80
-version: '3.4'
+version: '3.9'
+volumes:
+  db: {}

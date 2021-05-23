@@ -12,8 +12,6 @@ services:
     ports:
         -   "1433:1433"
     container_name: db
-    networks:
-        - paymentapi_payment
 
   paymentapi:
     image: ${DOCKER_REGISTRY-}paymentapi
@@ -26,16 +24,9 @@ services:
         - db
     command:
         -   "sleep 5;"
-    networks:
-        - paymentapi_payment
-    environment:
-        ServerName: "db"
-        Database: "PaymentDetailDb"
-        UserName: "SA"
-        Password: "A1b2a3h4r5e6m"
 volumes:
     db:
 networks:
-  paymentapi_payment:
-    external: true
+    paymentapi_default:
+        external: true
 
