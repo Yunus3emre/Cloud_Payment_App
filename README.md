@@ -39,4 +39,5 @@ Pull app container with:
 
 `docker pull onuryuksel/cloud-payment-app:app-latest`
 
-
+#### Note
+The database configurations will be your responsibility if you prefer the method which is pulling docker images and deploy. If you prefer the docker-compose method you will not need to configure the database. 
